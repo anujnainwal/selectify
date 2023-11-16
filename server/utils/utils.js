@@ -50,7 +50,7 @@ const sendResponse = (
     error: error ? error.message : null,
   };
 
-  res.status(code).json(response);
+  return res.status(code).json(response);
 };
 
 module.exports = {
